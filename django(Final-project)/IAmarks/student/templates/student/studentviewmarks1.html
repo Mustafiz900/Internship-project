@@ -1,0 +1,25 @@
+{% extends 'student/stud_basic.html' %}
+{% load static %}
+
+{% block title %}
+Student_view_marks
+{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center" style="margin: 20px;"><strong>View Marks</strong></h1>
+        <hr>
+        <h4 class="text-center" style="margin: 20px;"><strong>SEARCH</strong>&nbsp;<strong>USN HERE</strong></h4>
+        <div class="card">
+            <div class="card-body">
+                <div class="alert alert-warning" role="alert"><span><strong>ENTER</strong>&nbsp;<strong>USN IN CAPITAL LETTERS&nbsp;!</strong></span></div>
+                <form action="#" method="get"><input class="form-control" type="search" name="search" placeholder="1BO17CS054" required=""></form>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col"><button class="btn btn-dark btn-block" type="submit">Search</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock body %}

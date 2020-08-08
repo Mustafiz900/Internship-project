@@ -1,0 +1,119 @@
+{% extends 'faculty/faculty_basic.html' %}
+{% load static %}
+
+{% block title %}
+Enter Marks Page
+{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <h1 class="text-center shadow" style="margin: 20px;background-color: #fefefe;">IAMARKS</h1>
+        <div class="card text-left" style="background-color: rgb(145,134,134);">
+            <div class="card-body shadow">
+                <form action="#" method="post">
+                    <div class="form-group"><label for="branch"><strong>SELECT BRANCH:</strong></label>
+                        <select class="custom-select" required="" name="branch">
+                            <option value="12" selected="">CSE</option>
+                            <option value="13">MECH</option>
+                            <option value="14">CIVIL</option>
+                        </select></div>
+                    <div
+                        class="form-group"><label for="semester"><strong>SELECT SEMESTER:</strong></label>
+                        <select class="custom-select" required="" name="semester">
+                            <option value="12" selected="">FIRST</option>
+                            <option value="13">SECOND</option>
+                            <option value="14">THIRD</option>
+                            <option value="15">FORTH</option>
+                            <option value="16">FIFTH</option>
+                            <option value="17">SIXTH</option>
+                            <option value="">SEVENTH</option>
+                            <option value="">EIGTH</option>
+                        </select></div>
+            <div
+                class="form-group"><label for="usn"><strong>STUDENT</strong>&nbsp;<strong>USN:</strong></label>
+                <span style="color: rgb(255,2,2);"><strong>&nbsp; CAPITAL LETTERS ONLY*</strong></span>
+                <input class="form-control" type="text" name="usn" placeholder="1BO17CS054"></div>
+        <div
+            class="form-group"><label for="internal"><strong>SELECT</strong>&nbsp;<strong>INTERNAL:</strong><br></label>
+            <select class="form-control" name="internal">
+                <option value="12" selected="">INTERNAL_1</option>
+                <option value="13">INTERNAL_2</option>
+                <option value="14">INTERNAL_3</option></select></div>
+    <hr>
+    <h5><strong>Enter marks by selecting proper subjects:</strong></h5>
+    <hr>
+    <div class="form-row">
+        <div class="col-6">
+            <div class="form-group"><label for="sub_1">Select Subject 1:</label>
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_1">
+                    <option value="17" selected="">English</option>
+                    <option value="16" selected="">Maths</option>
+                    <option value="16" selected="">Science</option></select></div>
+        </div>
+        <div class="col-6">
+            <div class="form-group"><label for="sub_2">Select Subject 2:</label>
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_2">
+                    <option value="17" selected="">English</option>
+                    <option value="16" selected="">Maths</option>
+                    <option value="16" selected="">Science</option>
+                </select></div>
+        </div>
+        <div class="col-6">
+            <div class="form-group"><label for="sub_3">Select Subject 3:</label>
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_3">
+                <option value="17" selected="">English</option>
+                <option value="16" selected="">Maths</option>
+                <option value="16" selected="">Science</option></select></div>
+        </div>
+        <div class="col-6">
+            <div class="form-group"><label for="sub_4">Select Subject 4:</label>
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_4">
+                    <option value="17" selected="">English</option>
+                    <option value="16" selected="">Maths</option>
+                    <option value="16" selected="">Science</option>
+                </select></div>
+        </div>
+        <div class="col-6">
+            <div class="form-group"><label for="sub_5">Select Subject 5:</label> 
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_5">
+                    <option value="17" selected="">English</option>
+                    <option value="16" selected="">Maths</option>
+                    <option value="16" selected="">Science</option>
+                </select></div>
+        </div>
+        <div class="col-6">
+            <div class="form-group"><label for="sub_6">Select Subject 6:</label>
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_6">
+                    <option value="17" selected="">English</option>
+                    <option value="16" selected="">Maths</option>
+                    <option value="16" selected="">Science</option>
+                </select></div>
+        </div>
+        <div class="col-6">
+            <div class="form-group"><label for="sub_7">Select Subject 7:</label>
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_7">
+                    <option value="17" selected="">English</option>
+                    <option value="16" selected="">Maths</option>
+                    <option value="16" selected="">Science</option>
+                </select></div>
+        </div>
+        <div class="col-6">
+            <div class="form-group"><label for="sub_8">Select Subject 8:</label>
+                <select class="custom-select chosen" required="" style="color: #232323;" name="sub_8">
+                    <option value="17" selected="">English</option>
+                    <option value="16" selected="">Maths</option>
+                    <option value="16" selected="">Science</option>
+                </select></div>
+        </div>
+        <div class="col">
+            <div class="form-group"><button class="btn btn-dark btn-block" type="submit">Submit Marks</button></div>
+        </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+
+    {% endblock body %}
+ 

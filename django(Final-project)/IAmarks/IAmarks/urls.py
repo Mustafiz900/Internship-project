@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf.urls.static import static
 from .import views
 
 urlpatterns = [
@@ -22,4 +23,6 @@ urlpatterns = [
     path('student/',include('student.urls')),
     path('faculty/',include('faculty.urls')),
     path('',views.index),
+    path('login',views.handlelogin),
+    path('signup',views.signup),
 ]

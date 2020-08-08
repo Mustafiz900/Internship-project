@@ -1,0 +1,59 @@
+{% extends 'faculty_basic.html' %}
+{% load static %}
+ 
+{% block title %}
+Student_view_marks
+{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center" style="margin: 20px;">View Marks</h1>
+        <div class="card shadow">
+            <div class="card-body">
+                <h3>USN:1BO17CS001</h3>
+                <div class="table-responsive table-bordered text-center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Subject Name</th>
+                                <th>Marks Scored</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>29 / 30</td>
+                            </tr>
+                            <tr>
+                                <td>CG</td>
+                                <td>22 / 30</td>
+                            </tr>
+                            <tr>
+                                <td>OR</td>
+                                <td>30 / 30</td>
+                            </tr>
+                            <tr>
+                                <td>CNC</td>
+                                <td>28 / 30</td>
+                            </tr>
+                            <tr>
+                                <td>OS</td>
+                                <td>27 / 30</td>
+                            </tr>
+                            <tr>
+                                <td>SS</td>
+                                <td>25 / 30</td>
+                            </tr>
+                            <tr>
+                                <td>TOTAL</td>
+                                <td>161 / 180</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock body %}
+   

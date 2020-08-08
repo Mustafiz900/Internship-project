@@ -1,0 +1,64 @@
+{% extends 'faculty/faculty_basic.html' %}
+{% load static %}
+
+{% block title %}
+faculty_view_marks
+{% endblock title %}
+
+{% block body%}
+    <div class="container">
+        <h1 class="text-center" style="margin: 20px;">View Marks</h1>
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <div class="form-group pull-right col-lg-4"><input type="text" class="search form-control" placeholder="Search here!"></div>
+                    <div class="table-responsive table-bordered text-center table table-hover table-bordered results">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Sr no</th>
+                                    <th>Usn</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>1BO17CS054</td>
+                                    <td>Ram</td>
+                                    <td>ram@gmail.com</td>
+                                    <td><a class="btn btn-outline-info" role="button" href="view3">View Marks</a></td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>1BO17CS052</td>
+                                    <td>Javeriya</td>
+                                    <td>syeda@gmail.com</td>
+                                    <td><a class="btn btn-outline-info" role="button" href="view3">View Marks</a></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>1BO17CS044</td>
+                                    <td>Mustafiz</td>
+                                    <td>musta@gmail.com</td>
+                                    <td><a class="btn btn-outline-info" role="button" href="view3">View Marks</a></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>1BO17CS051</td>
+                                    <td>Kiran</td>
+                                    <td>kiran@gmail.com</td>
+                                    <td><a class="btn btn-outline-info" role="button" href="view3">View Marks</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock body %}
+   

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import StudentMarks
+from django.conf import settings
 
 # Create your views here.
 def index(request):
@@ -20,3 +21,12 @@ def search(request):
     params={'allPosts':allPosts,'query':query} 
 
     return render(request,'student/search.html',params)
+
+def aboutus(request):
+    return render(request,'student/aboutus.html')
+
+def viewmarks(request):
+    return render(request,'student/studentviewmarks1.html')
+
+def contactus(request):
+    return render(request,'student/contactus.html')
