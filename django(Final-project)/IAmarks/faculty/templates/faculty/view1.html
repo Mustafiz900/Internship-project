@@ -6,51 +6,21 @@ Faculty_view_marks
 {% endblock title %}
 
 {% block body %}
-<div class="container">
+ <div class="container">
         <h1 class="text-center" style="margin: 20px;"><strong>View Marks</strong></h1>
-        <h4 class="text-center" style="margin: 20px;"><strong>Select Branch</strong></h4>
-        <div class="row">
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">COMPUTER SCIENCE AND ENGINEERING</a></div>
+        <hr>
+        <h4 class="text-center" style="margin: 20px;"><strong>SEARCH</strong>&nbsp;<strong>USN HERE</strong></h4>
+        <div class="card">
+            <div class="card-body">
+                <div class="alert alert-warning" role="alert"><span><strong>ENTER</strong>&nbsp;<strong>USN IN CAPITAL LETTERS&nbsp;!</strong></span></div>
+                <form action="view2" method="get"><input class="form-control" type="search" name="search" id="search" placeholder="Eg:-1BO17CS054" required="">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col"><button class="btn btn-dark btn-block" type="submit">Search</button></div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">MECHANICAL ENGINEERING</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">CIVIL ENGINEERING</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">ELECTRICAL ENGINEERING</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">INFORMATION SCIENCE ENGINEERING</a></div>
-                </div>
-            </div>
-            {% comment %} <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">ELECTRICAL ENGINEERING</a></div>
-                </div>
-            </div> {% endcomment %}
-            {% comment %} <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">ELECTRICAL ENGINEERING</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="view2">ELECTRICAL ENGINEERING</a></div>
-                </div> {% endcomment %}
+                </form>
             </div>
         </div>
     </div>
+
 
     {% endblock body %}

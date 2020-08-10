@@ -1,58 +1,68 @@
 {% extends 'faculty/faculty_basic.html' %}
 {% load static %}
-
+ 
 {% block title %}
 Faculty_view_marks
 {% endblock title %}
 
 {% block body %}
 
+{% for post in allPosts %}
     <div class="container">
-        <h1 class="text-center" style="margin: 20px;"><strong>View Marks</strong></h1>
-        <h4 class="text-center" style="margin: 20px;"><strong>Select SEMESTER</strong></h4>
-        <div class="row">
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER I</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER II</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER III</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER IV</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER V</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER VI</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER VII</a></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card text-center" style="margin: 20px;">
-                    <div class="card-body"><a class="btn btn-dark" role="button" style="color: rgb(248,250,251);" href="facultyview">SEMESTER VIII</a></div>
+        <h1 class="text-center" style="margin: 20px;">View Marks</h1>
+        <div class="card shadow">
+            <div class="card-body">
+                <h3>{{post.usn}}</h3>
+                <div class="table-responsive table-bordered text-center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Subject Name</th>
+                                <th>Marks Scored</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for sub in allSub %}
+                            <tr>
+                                <td>{{sub.sub1}}</td>
+                                <td>{{post.sub1_marks}} / 30</td>
+                            </tr>
+                            <tr>
+                                <td>{{sub.sub2}}</td>
+                                <td>{{post.sub2_marks}} / 30</td>
+                            </tr>
+                            <tr>
+                                <td>{{sub.sub3}}</td>
+                                <td>{{post.sub3_marks}} / 30</td>
+                            </tr>
+                            <tr>
+                                <td>{{sub.sub4}}</td>
+                                <td>{{post.sub4_marks}} / 30</td>
+                            </tr>
+                            <tr>
+                                <td>{{sub.sub5}}</td>
+                                <td>{{post.sub5_marks}} / 30</td>
+                            </tr>
+                            <tr>
+                                <td>{{sub.sub6}}</td>
+                                <td>{{post.sub6_marks}}/ 30</td>
+                            </tr>
+                            <tr>
+                                <td>{{sub.sub7}}</td>
+                                <td>{{post.sub7_marks}}/ 30</td>
+                            </tr>
+                            <tr>
+                                <td>{{sub.sub8}}</td>
+                                <td>{{post.sub8_marks}}/ 30</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+{% endfor %}
 
     {% endblock body %}
-
+   
